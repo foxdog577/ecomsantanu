@@ -1,29 +1,16 @@
 import Link from 'next/link'
 
 export default function HomePage() {
-
-  const sliderImages = [
-    '/showcase/slide1.jpg',
-    '/showcase/slide2.jpg',
-    '/showcase/slide3.jpg',
-    '/showcase/slide4.jpg',
-    '/showcase/slide5.jpg',
-    '/showcase/slide6.jpg',
-    '/showcase/slide7.jpg',
-  ]
-
   return (
     <div className="bg-black text-white">
 
       {/* HERO SECTION */}
       <section className="relative overflow-hidden">
-
         <div className="absolute inset-0 bg-gradient-to-b from-green-900/20 to-transparent" />
 
         <div className="max-w-7xl mx-auto px-6 py-28 relative z-10">
 
           <div className="max-w-3xl">
-
             <p className="text-green-400 font-medium mb-4">
               Practical Learning Platform
             </p>
@@ -40,7 +27,6 @@ export default function HomePage() {
             </p>
 
             <div className="flex flex-wrap gap-4">
-
               <Link
                 href="/courses"
                 className="bg-green-600 hover:bg-green-700 transition px-8 py-4 rounded-lg font-medium"
@@ -54,86 +40,35 @@ export default function HomePage() {
               >
                 Start Learning
               </Link>
-
             </div>
-
           </div>
-        </div>
-      </section>
-
-      {/* IMAGE SHOWCASE SLIDER */}
-      <section className="py-12 border-t border-gray-900 overflow-hidden">
-
-        <div className="mb-10 text-center">
-
-          <p className="text-green-400 mb-3">
-            Learning Experience
-          </p>
-
-          <h2 className="text-4xl font-bold">
-            Practical Skills In Action
-          </h2>
-
-        </div>
-
-        <div className="relative w-full overflow-hidden">
-
-          <div className="flex gap-6 animate-scroll whitespace-nowrap">
-
-            {[...sliderImages, ...sliderImages].map((image, index) => (
-
-              <div
-                key={index}
-                className="min-w-[350px] md:min-w-[500px] h-[220px] md:h-[300px] rounded-3xl overflow-hidden border border-gray-800 bg-gray-900 flex-shrink-0"
-              >
-
-                <img
-                  src={image}
-                  alt="Learning showcase"
-                  className="w-full h-full object-cover hover:scale-105 transition duration-700"
-                />
-
-              </div>
-
-            ))}
-
-          </div>
-
         </div>
       </section>
 
       {/* FEATURED COURSE */}
       <section className="py-24 border-t border-gray-900">
-
         <div className="max-w-7xl mx-auto px-6">
 
           <div className="mb-14">
-
-            <p className="text-green-400 mb-3">
-              Featured Course
-            </p>
+            <p className="text-green-400 mb-3">Featured Course</p>
 
             <h2 className="text-4xl font-bold">
               Start Your E-Commerce Journey
             </h2>
-
           </div>
 
           <div className="grid md:grid-cols-2 gap-10 items-center">
 
             {/* LEFT */}
             <div className="bg-gray-900 rounded-2xl overflow-hidden border border-gray-800">
-
               <img
                 src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1200&auto=format&fit=crop"
                 className="w-full h-[350px] object-cover"
               />
-
             </div>
 
             {/* RIGHT */}
             <div>
-
               <h3 className="text-3xl font-bold mb-5">
                 📦 E-Commerce Mastery Course
               </h3>
@@ -169,21 +104,16 @@ export default function HomePage() {
               >
                 View Course
               </Link>
-
             </div>
-
           </div>
-
         </div>
       </section>
 
       {/* WHY LEARN HERE */}
       <section className="py-24 border-t border-gray-900 bg-gradient-to-b from-black to-gray-950">
-
         <div className="max-w-7xl mx-auto px-6">
 
           <div className="text-center max-w-2xl mx-auto mb-16">
-
             <p className="text-green-400 mb-3">
               Why Choose ecomsantanu
             </p>
@@ -196,17 +126,13 @@ export default function HomePage() {
               Our courses focus on practical learning, real-world application,
               and helping people build genuine growth opportunities.
             </p>
-
           </div>
 
           <div className="grid md:grid-cols-4 gap-6">
 
             {/* CARD 1 */}
             <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8">
-
-              <div className="text-3xl mb-5">
-                🚀
-              </div>
+              <div className="text-3xl mb-5">🚀</div>
 
               <h3 className="text-xl font-semibold mb-3">
                 Beginner Friendly
@@ -215,15 +141,11 @@ export default function HomePage() {
               <p className="text-gray-400 leading-7 text-sm">
                 Simple explanations designed for learners starting from zero.
               </p>
-
             </div>
 
             {/* CARD 2 */}
             <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8">
-
-              <div className="text-3xl mb-5">
-                💡
-              </div>
+              <div className="text-3xl mb-5">💡</div>
 
               <h3 className="text-xl font-semibold mb-3">
                 Practical Learning
@@ -232,15 +154,11 @@ export default function HomePage() {
               <p className="text-gray-400 leading-7 text-sm">
                 Learn actionable strategies that can be applied immediately.
               </p>
-
             </div>
 
             {/* CARD 3 */}
             <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8">
-
-              <div className="text-3xl mb-5">
-                📈
-              </div>
+              <div className="text-3xl mb-5">📈</div>
 
               <h3 className="text-xl font-semibold mb-3">
                 Growth Focused
@@ -249,15 +167,11 @@ export default function HomePage() {
               <p className="text-gray-400 leading-7 text-sm">
                 Build digital skills and income opportunities for the future.
               </p>
-
             </div>
 
             {/* CARD 4 */}
             <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8">
-
-              <div className="text-3xl mb-5">
-                🌍
-              </div>
+              <div className="text-3xl mb-5">🌍</div>
 
               <h3 className="text-xl font-semibold mb-3">
                 Accessible Learning
@@ -266,167 +180,14 @@ export default function HomePage() {
               <p className="text-gray-400 leading-7 text-sm">
                 Affordable education designed for learners everywhere.
               </p>
-
             </div>
 
           </div>
-
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
-<section className="py-24 border-t border-gray-900 bg-black">
-
-  <div className="max-w-7xl mx-auto px-6">
-
-    {/* HEADING */}
-    <div className="text-center max-w-3xl mx-auto mb-16">
-
-      <p className="text-green-400 mb-3">
-        Student Reviews
-      </p>
-
-      <h2 className="text-4xl md:text-5xl font-bold mb-6">
-        What Our Learners Say
-      </h2>
-
-      <p className="text-gray-400 text-lg leading-8">
-        Real feedback from learners building practical skills,
-        online businesses, and digital growth opportunities.
-      </p>
-
-    </div>
-
-    {/* TESTIMONIAL GRID */}
-    <div className="grid md:grid-cols-3 gap-8">
-
-      {/* CARD 1 */}
-      <div className="bg-gray-900/70 backdrop-blur border border-gray-800 rounded-3xl p-8 hover:border-green-500/40 transition duration-300">
-
-        {/* STARS */}
-        <div className="flex gap-1 mb-6 text-yellow-400 text-xl">
-          ★★★★★
-        </div>
-
-        {/* REVIEW */}
-        <p className="text-gray-300 leading-8 mb-8">
-          The Amazon FBA explanations were extremely beginner-friendly.
-          I finally understood how online selling actually works.
-        </p>
-
-        {/* USER */}
-        <div className="flex items-center gap-4">
-
-          <img
-            src="https://randomuser.me/api/portraits/women/44.jpg"
-            alt="Student"
-            className="w-14 h-14 rounded-full object-cover"
-          />
-
-          <div>
-
-            <h4 className="font-semibold">
-              Priya Sharma
-            </h4>
-
-            <p className="text-sm text-gray-400">
-              Beginner Seller
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      {/* CARD 2 */}
-      <div className="bg-gray-900/70 backdrop-blur border border-gray-800 rounded-3xl p-8 hover:border-green-500/40 transition duration-300">
-
-        {/* STARS */}
-        <div className="flex gap-1 mb-6 text-yellow-400 text-xl">
-          ★★★★★
-        </div>
-
-        {/* REVIEW */}
-        <p className="text-gray-300 leading-8 mb-8">
-          I loved the practical approach. Instead of theory,
-          the course focused on real execution and strategies.
-        </p>
-
-        {/* USER */}
-        <div className="flex items-center gap-4">
-
-          <img
-            src="https://randomuser.me/api/portraits/men/32.jpg"
-            alt="Student"
-            className="w-14 h-14 rounded-full object-cover"
-          />
-
-          <div>
-
-            <h4 className="font-semibold">
-              Arjun Das
-            </h4>
-
-            <p className="text-sm text-gray-400">
-              Ecommerce Learner
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      {/* CARD 3 */}
-      <div className="bg-gray-900/70 backdrop-blur border border-gray-800 rounded-3xl p-8 hover:border-green-500/40 transition duration-300">
-
-        {/* STARS */}
-        <div className="flex gap-1 mb-6 text-yellow-400 text-xl">
-          ★★★★★
-        </div>
-
-        {/* REVIEW */}
-        <p className="text-gray-300 leading-8 mb-8">
-          Best platform to learn Amazon FBA, 
-          My life has been upgraded.
-          Thank you EcomSantanu.
-        </p>
-
-        {/* USER */}
-        <div className="flex items-center gap-4">
-
-          <img
-            src="/testimonials/RiyaShaw.jpg"
-            alt="Student"
-            className="w-14 h-14 rounded-full object-cover"
-          />
-
-          <div>
-
-            <h4 className="font-semibold">
-              RiyaShaw
-            </h4>
-
-            <p className="text-sm text-gray-400">
-              Digital Skills Student
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
       {/* LEARNING FLOW */}
       <section className="py-24 border-t border-gray-900">
-
         <div className="max-w-6xl mx-auto px-6 text-center">
 
           <p className="text-green-400 mb-3">
@@ -440,77 +201,43 @@ export default function HomePage() {
           <div className="grid md:grid-cols-4 gap-6">
 
             <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8">
-
-              <div className="text-4xl mb-5">
-                📚
-              </div>
-
-              <h3 className="text-xl font-semibold mb-3">
-                Learn
-              </h3>
-
+              <div className="text-4xl mb-5">📚</div>
+              <h3 className="text-xl font-semibold mb-3">Learn</h3>
               <p className="text-gray-400 text-sm leading-7">
                 Understand practical concepts step-by-step.
               </p>
-
             </div>
 
             <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8">
-
-              <div className="text-4xl mb-5">
-                ⚡
-              </div>
-
-              <h3 className="text-xl font-semibold mb-3">
-                Apply
-              </h3>
-
+              <div className="text-4xl mb-5">⚡</div>
+              <h3 className="text-xl font-semibold mb-3">Apply</h3>
               <p className="text-gray-400 text-sm leading-7">
                 Use your knowledge in real-world situations.
               </p>
-
             </div>
 
             <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8">
-
-              <div className="text-4xl mb-5">
-                💰
-              </div>
-
-              <h3 className="text-xl font-semibold mb-3">
-                Earn
-              </h3>
-
+              <div className="text-4xl mb-5">💰</div>
+              <h3 className="text-xl font-semibold mb-3">Earn</h3>
               <p className="text-gray-400 text-sm leading-7">
                 Build income opportunities through skills.
               </p>
-
             </div>
 
             <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8">
-
-              <div className="text-4xl mb-5">
-                🌱
-              </div>
-
-              <h3 className="text-xl font-semibold mb-3">
-                Grow
-              </h3>
-
+              <div className="text-4xl mb-5">🌱</div>
+              <h3 className="text-xl font-semibold mb-3">Grow</h3>
               <p className="text-gray-400 text-sm leading-7">
                 Improve your future and personal growth.
               </p>
-
             </div>
 
           </div>
-
         </div>
       </section>
 
       {/* FINAL CTA */}
       <section className="py-28 border-t border-gray-900">
-
         <div className="max-w-4xl mx-auto px-6 text-center">
 
           <p className="text-green-400 mb-4">
@@ -534,10 +261,8 @@ export default function HomePage() {
           >
             Explore Courses
           </Link>
-
         </div>
       </section>
-
     </div>
   )
 }
